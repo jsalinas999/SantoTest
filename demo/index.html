@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>Santo Test</title>
+  <link rel="shortcut icon" href="https://image.freepik.com/iconos-gratis/botellas-de-bebidas_318-68644.png">
+  <link rel="icon" href="https://image.freepik.com/iconos-gratis/botellas-de-bebidas_318-68644.png">
+  <link rel="stylesheet" type="text/css" media="all" href="style.css">
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/jquery.leanModal.min.js"></script>
+  <!-- jQuery plugin leanModal under MIT License http://leanmodal.finelysliced.com.au/ -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div id="topbar"><a>Santo Test</a>
+    <ccc>
+      <a style="text-align:right;"name="Registro" dir="ltr" href="REGISTRO.html">Registro</a>
+      </style>
+    </ccc>
+  </div>
+  <div id="w">
+    <div id="content">
+      <h1>Bienvenido al juego!</h1>
+      <center><a href="#loginmodal" class="flatbtn" id="modaltrigger">Ingresar</a></center>
+    </div>
+  </div>
+  <div id="loginmodal" style="display:none;">
+    <h1>User Login</h1>
+    <form id="loginform" name="loginform" method="post" action="index.html">
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" class="txtfield" tabindex="1">
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" class="txtfield" tabindex="2">
+
+      <div class="center"><input type="submit" name="loginbtn" id="loginbtn" class="flatbtn-blu hidemodal" value="Log In" tabindex="3"></div>
+    </form>
+  </div>
+<script type="text/javascript">
+$(function(){
+  $('#loginform').submit(function(e){
+    return false;
+  });
+
+  $('#modaltrigger').leanModal({ top: 110, overlay: 0.45, closeButton: ".hidemodal" });
+});
+</script>
+</body>
+</html>
